@@ -1,0 +1,130 @@
+---
+bibliography:
+- references/bibtex_from_google_scholar.bib
+- references/r_package_citations.bib
+csl: styles/american-statistical-association.csl
+output:
+  pdf_document: default
+  word_document: default
+---
+
+# Title
+
+**The discovery of something fantastic**
+
+# Authors
+
+**Author One^1,2^\*, Author Two^2^\*, Author Three^1^**
+
+# Affiliations
+
+^1^ Academulab, University of Knowledge, New York, NY, USA
+
+^2^ Industrulab, Startupcorp, San Francisco, CA, USA
+
+`*` Corresponding Authors
+
+Email: author.one@uknowledge.edu, author.two@startupcorp.com
+
+
+\newpage  <!-- end of title page -->
+
+# Abstract
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis mi id purus interdum finibus in at sem. Morbi id arcu sit amet ligula consectetur suscipit. Sed vitae tortor eget diam consectetur convallis. Praesent porttitor nisi porta tellus porttitor, eget tempus nibh ullamcorper. Curabitur quis vestibulum erat, vehicula ornare tortor. Quisque a hendrerit sapien, vel hendrerit urna. Nulla aliquam urna et magna venenatis sollicitudin.
+
+# Keywords
+
+# Glossary
+
+# Background
+
+Aliquam lobortis porttitor sem. Aliquam erat volutpat. In malesuada, lorem at tincidunt elementum, mauris felis rhoncus magna, sed faucibus dolor elit a diam. Morbi dignissim ex ligula, vel eleifend ante malesuada maximus. Fusce purus libero, vulputate placerat tellus nec, interdum pellentesque neque. Nam ut pellentesque orci. Ut eget est a eros ornare lacinia at sit amet lorem.
+
+Ut finibus, purus sed volutpat pharetra, quam justo efficitur est, ut porta nulla nisl eu leo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent in metus sit amet urna commodo laoreet. Vestibulum quis dui nisi. Vivamus eu fringilla dolor. Nullam a mauris sit amet felis semper volutpat. Vestibulum facilisis ligula consectetur nunc rhoncus, a finibus odio pharetra. Ut eros magna, laoreet a nisi sed, faucibus consectetur ex. Sed leo justo, tempor eget porta eget, tincidunt mollis enim. Vivamus ut nisi eget nisl semper posuere eget et tortor. Sed sollicitudin erat quis mi consectetur, sit amet ornare est dignissim. Morbi vel est venenatis, porttitor velit id, vestibulum turpis.
+
+# Materials & Methods
+
+We want to cite our important methods (@glmnet1, @glmnet2, @friedman2001elements).
+
+Important calculations were involved:
+
+<!-- Thanks to https://math.stackexchange.com/a/1000908/501801 for the following -->
+
+One generally accepted definition for $\mathbb{P}\left(B\right) \neq 0$ is 
+$$\mathbb{P}\left(A \mid B\right) = \dfrac{\mathbb{P}\left(A \cap B\right)}{\mathbb{P}\left(B\right)}\text{.}$$
+If we had $n$ conditions, we could suppose that $\bigcup\limits_{i=1}^{\infty}A_i = A$, where $A_1, A_2, \dots$  is a partition of an event $A$, and 
+$\mathbb{P}\left(A_i \mid B_1 \cap B_2 \cap \cdots\cap B_n\right) = \dfrac{\mathbb{P}\left(A_i \cap B_1 \cap B_2 \cdots \cap B_n\right)}{\mathbb{P}\left(B_1 \cap B_2 \cdots \cap B_n\right)} = \dfrac{\mathbb{P}\left(B_1 \cap B_2 \cap \cdots\cap B_n \mid A_i\right)\mathbb{P}\left(A_i\right)}{\sum\limits_{A_i \subseteq A}\mathbb{P}\left(B_1 \cap B_2 \cap \cdots\cap B_n \mid A_i\right)\mathbb{P}\left(A_i\right)}\text{.}$
+
+<!-- Thanks to http://mathb.in/1 for the following -->
+
+_Theorem._ Euler's summation formula. _If $f$ has a continuous
+derivative $f'$ on the interval $[y, x]$, where $0 < y < x$,
+then_
+
+\begin{align}
+\label{theorem}
+\sum_{y < n \le x} f(n) = & \int_y^x f(t) dt +
+                            \int_y^x (t - [t]) f'(t) dt \notag \\
+                          & + f(x)([x] - x) - f(y)([y] - y).
+\end{align}
+
+_Proof._ Let $m = [y]$, $k = [x]$. For integers $n$ and $n - 1$
+in $[y, x]$ we have
+\begin{align*}
+\int_{n-1}^n [t] f'(t) dt & = \int_{n-1}^n f'(t) dt \\
+                          & = (n - 1) \bigl( f(n) - f(n - 1)
+                                      \bigr) \\
+                          & = \bigl(
+                                n f(n) - (n - 1) f(n - 1)
+                              \bigr) - f(n).
+\end{align*}
+Summing from $n = m + 1$ to $n = k$ we find
+\begin{align*}
+\int_{m}^k [t] f'(t) dt & = \sum_{n = m + 1}^k \bigl(
+                                n f(n) - (n - 1) f(n - 1) 
+                            \bigr) - \sum_{y < n \le x} f(n) \\
+                        & = k f(k) - m f(m) -
+                            \sum_{y < n \le x} f(n).
+\end{align*}
+Hence,
+\begin{align}
+\label{summation}
+\sum_{y < n \le x} f(n) & = - \int_{m}^k [t] f'(t) dt +
+                              k f(k) - m f(m) \notag \\
+                        & = - \int_{y}^x [t] f'(t) dt +
+                              k f(x) - m f(y).
+\end{align}
+Integration by parts gives us
+\begin{equation*}
+\int_y^x f(t) dt = x f(x) - y f(y) - \int_y^x t f'(t) dt.
+\end{equation*}
+When this is combined with \eqref{summation} we obtain
+\eqref{theorem}.
+
+# Results
+
+We applied some cool tech to discover the following awesomeness (@lecun2015deep, @shendure2017dna).
+
+# Discussion
+
+Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras iaculis, nisl at varius tincidunt, lacus tellus vehicula lectus, ut viverra purus nunc a risus. In lacinia gravida orci ac blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque condimentum odio a lacinia sollicitudin. Donec tristique iaculis lobortis. Nullam lobortis neque gravida tincidunt bibendum. Nullam suscipit dui neque. In viverra lacus enim, eu ullamcorper sapien ultricies quis. Mauris metus neque, rutrum non pretium sit amet, mattis et sem. Etiam sed eros tempor, rutrum risus sed, fringilla purus. Aliquam eros est, consequat eu dictum eget, ultricies eu ex. Sed blandit lacinia erat, nec semper purus porttitor ac. Cras lacus ex, porttitor vitae nunc ut, dictum tempor risus.
+
+Etiam vitae arcu in augue fermentum egestas sed ut mi. Nullam sagittis ligula quis vestibulum rhoncus. Suspendisse finibus neque et vestibulum finibus. Nullam volutpat nulla eu accumsan luctus. Nulla facilisi. Cras quis nisl sagittis, suscipit risus vel, aliquam neque. Pellentesque eu dui sapien. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer non leo fermentum, sodales ante et, mollis velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas quis nunc eu nisl dapibus pellentesque. Quisque commodo est volutpat urna eleifend, non volutpat mi faucibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+
+# Appendix
+
+# Acknowledgments
+
+Thanks to `R` (@base, @wickham2014advanced)!
+
+# References
+
+<!-- From https://stackoverflow.com/questions/41532707/include-rmd-appendix-after-references
+ div tells Pandoc to include the refs here, rather than at the end of the document. -->
+ 
+<div id="refs"></div>
+
+# Figure captions
+
+# Tables
