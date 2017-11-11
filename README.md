@@ -5,5 +5,5 @@ Generic manuscript R Markdown template. Linked to set of many [Citation Style La
 To render `manuscript.Rmd` to Microsoft Word and PDF outputs simultaneously, run the following on the `R` console:
 
 ```r
-rmarkdown::render("manuscript.Rmd", output_format="all")
+rmarkdown::render("manuscript.Rmd", output_format="all", output_dir="rendered_output")
 ```
