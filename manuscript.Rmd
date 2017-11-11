@@ -20,7 +20,7 @@ output:
 
 ^1^ Academulab, University of Knowledge, New York, NY, USA
 
-^2^ Industrulab, Startupcorp, San Francisco, CA, USA
+^2^ Industruspace, Startupcorp, San Francisco, CA, USA
 
 `*` Corresponding Authors
 
@@ -106,6 +106,8 @@ When this is combined with \eqref{summation} we obtain
 
 We applied some cool tech to discover the following awesomeness (@lecun2015deep, @shendure2017dna).
 
+Key findings are highlighted in red below (Fig. \ref{fig1}).
+
 # Discussion
 
 Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras iaculis, nisl at varius tincidunt, lacus tellus vehicula lectus, ut viverra purus nunc a risus. In lacinia gravida orci ac blandit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque condimentum odio a lacinia sollicitudin. Donec tristique iaculis lobortis. Nullam lobortis neque gravida tincidunt bibendum. Nullam suscipit dui neque. In viverra lacus enim, eu ullamcorper sapien ultricies quis. Mauris metus neque, rutrum non pretium sit amet, mattis et sem. Etiam sed eros tempor, rutrum risus sed, fringilla purus. Aliquam eros est, consequat eu dictum eget, ultricies eu ex. Sed blandit lacinia erat, nec semper purus porttitor ac. Cras lacus ex, porttitor vitae nunc ut, dictum tempor risus.
@@ -125,6 +127,8 @@ Thanks to `R` (@base, @wickham2014advanced)!
  
 <div id="refs"></div>
 
-# Figure captions
-
 # Tables
+
+# Figures
+
+![My caption: Easy-to-spot trend presented. \label{fig1}](figures/graph3_random_color.png)
