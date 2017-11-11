@@ -1,3 +1,3 @@
 # Manuscript Template
 
-Generic manuscript RM arkdown template. Linked to set of many Citation Style Language (CSL) citation styles for convenience.
+Generic manuscript R Markdown template. Linked to set of many Citation Style Language (CSL) citation styles for convenience.
