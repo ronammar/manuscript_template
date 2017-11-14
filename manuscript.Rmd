@@ -16,6 +16,7 @@ header-includes:
 - \usepackage{lineno}
 - \linenumbers
 #-------------------------------------------------------------------------------
+- \linespread{1.0}  # set to 2.0 for double-spacing
 ---
 
 # Title
