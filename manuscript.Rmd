@@ -7,6 +7,10 @@ output:
   pdf_document: default
   word_document: default
 # Learn more about refs in Rmd here: http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
+# Citations go inside square brackets and are separated by semicolons. Each citation must have a key, composed of ‘@’ + the citation identifier from the database, and may optionally have a prefix, a locator, and a suffix.
+# A minus sign (-) before the @ will suppress mention of the author in the citation. This can be useful when the author is already mentioned in the text
+# For in-text citations, omit the square brackets.
+# If you want to include items in the bibliography without actually citing them in the body text, you can define a dummy nocite metadata field and put the citations there.
 ---
 
 # Title
