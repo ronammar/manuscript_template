@@ -6,6 +6,7 @@ csl: styles/american-statistical-association.csl
 output:
   pdf_document: default
   word_document: default
+# Learn more about refs in Rmd here: http://rmarkdown.rstudio.com/authoring_bibliographies_and_citations.html
 ---
 
 # Title
@@ -45,7 +46,8 @@ Ut finibus, purus sed volutpat pharetra, quam justo efficitur est, ut porta null
 
 # Materials & Methods
 
-We want to cite our important methods (@glmnet1, @glmnet2, @friedman2001elements).
+<!-- sample of >1 citation formatting -->
+We want to cite our important methods [@glmnet1; @glmnet2; @friedman2001elements].
 
 Important calculations were involved:
 
@@ -104,7 +106,7 @@ When this is combined with \eqref{summation} we obtain
 
 # Results
 
-We applied some cool tech to discover the following awesomeness (@lecun2015deep, @shendure2017dna).
+We applied some cool tech to discover the following awesomeness [@lecun2015deep].
 
 Key findings are highlighted in red below (Fig. \ref{fig1}).
 
@@ -118,7 +120,7 @@ Etiam vitae arcu in augue fermentum egestas sed ut mi. Nullam sagittis ligula qu
 
 # Acknowledgments
 
-Thanks to `R` (@base, @wickham2014advanced)!
+Thanks to `R` [@base; @wickham2014advanced]!
 
 # References
 
