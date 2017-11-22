@@ -17,6 +17,7 @@ header-includes:
 - \usepackage{lineno}
 - \usepackage{pdflscape}
 - \pagestyle{fancy}
+- \fancyhead{}
 - \fancyfoot[C]{\thepage\ of \pageref{LastPage}}
 - \newcommand{\blandscape}{\begin{landscape}}
 - \newcommand{\elandscape}{\end{landscape}}
