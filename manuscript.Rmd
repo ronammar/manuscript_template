@@ -11,11 +11,16 @@ output:
 # A minus sign (-) before the @ will suppress mention of the author in the citation. This can be useful when the author is already mentioned in the text
 # For in-text citations, omit the square brackets.
 # If you want to include items in the bibliography without actually citing them in the body text, you can define a dummy nocite metadata field and put the citations there.
-##### Adds line numbers to the output ------------------------------------------
 header-includes:
+- \usepackage{fancyhdr}
+- \usepackage{lastpage}
 - \usepackage{lineno}
-- \linenumbers
-#-------------------------------------------------------------------------------
+- \usepackage{pdflscape}
+- \pagestyle{fancy}
+- \fancyfoot[C]{\thepage\ of \pageref{LastPage}}
+- \newcommand{\blandscape}{\begin{landscape}}
+- \newcommand{\elandscape}{\end{landscape}}
+- \linenumbers  # Adds line numbers to the output
 - \linespread{1.0}  # set to 2.0 for double-spacing
 ---
 
